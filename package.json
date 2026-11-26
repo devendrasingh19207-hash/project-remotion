@@ -1,0 +1,39 @@
+{
+  "name": "notes-to-video",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Turn PDF study notes into Remotion explainer videos.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch-path=server.js --watch-path=src server.js",
+    "test": "node --test",
+    "build": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@google/genai": "^3.6.1",
+    "@remotion/bundler": "^4.0.547",
+    "@remotion/media": "^4.0.547",
+    "@remotion/renderer": "^4.0.547",
+    "ajv": "^8.17.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mediabunny": "^1.66.4",
+    "multer": "^2.5.0",
+    "pdf-parse": "^1.1.1",
+    "pino": "^10.4.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "remotion": "^4.0.547",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.11",
+    "@types/react": "^19.3.3",
+    "@types/react-dom": "^19.3.0",
+    "typescript": "^7.0.2"
+  }
+}
